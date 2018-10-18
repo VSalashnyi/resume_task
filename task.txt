@@ -1,0 +1,20 @@
+https://leetcode.com/problems/reverse-words-in-a-string/
+
+var reverseWords = function(str) {
+    if(/\S/.test(str)){
+        let arr = str.trim().split(' ');
+        let result = [];
+        arr.forEach(word => {
+            if(word !== '') result.push(word);
+        })
+        return result.reverse().join(' ');
+    } else {
+        return "";
+    }
+};
+
+https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
+
+var findMin = function(nums) {
+    return Math.min(...nums);
+};
